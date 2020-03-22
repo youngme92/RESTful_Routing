@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTful Routes</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <title>RESTful Routing</title>
+    <style>
+        .container {
+            margin: 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ui block header">
+            RESTful Routing
+        </div>
+        <table class="ui selectable celled table">
+            <thead>
+                <tr class="active">
+                    <td>Name</td>
+                    <td>Path</td>
+                    <td>HTTP Verb</td>
+                    <td>Purpose</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Index</td>
+                    <td>/index</td>
+                    <td>GET</td>
+                    <td>List all things</td>
+                </tr>
+                <tr class="positive">
+                    <td>New</td>
+                    <td>/index/new</td>
+                    <td>GET</td>
+                    <td>Show new thing form</td>
+                </tr>
+                <tr class="positive">
+                    <td>Create</td>
+                    <td>/index</td>
+                    <td>POST</td>
+                    <td>Create a new thing then redirect somwhere</td>
+                </tr>
+                <tr class="primary">
+                    <td>Show</td>
+                    <td>/index/:id</td>
+                    <td>GET</td>    
+                    <td>Show info about one specific thing</td>
+                </tr>
+                <tr class="warning" >
+                    <td>Edit</td>
+                    <td>/index/:id/edit</td>
+                    <td>GET</td>
+                    <td>Update a particular thing then redirect somewhere</td>
+                </tr>
+                <tr class="warning">
+                    <td>Update</td>
+                    <td>/index/:id</td>
+                    <td>PUT</td>
+                    <td></td>
+                </tr>
+                <tr class="negative">
+                    <td>Destory</td>
+                    <td>/index/:id</td>
+                    <td>DELETE</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+</body>
+</html>
